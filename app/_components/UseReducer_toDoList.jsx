@@ -41,8 +41,8 @@ const UseReducer_toDoList = () => {
     </div>
 
     
-    <ul>{Task.Tasks.map((item)=>(
-           <div className="flex items-center gap-4 mt-5 ml-60">
+    <ul>{Task.Tasks.map((item,index)=>(
+           <div key={index} className="flex items-center gap-4 mt-5 ml-60">
            <li key={item.id}>{item.text}</li>
            <button onClick={()=>{
             TaskDispatch({type:"REMOVE_TASK",payload:item.id})

@@ -20,10 +20,10 @@ const Home = () => {
           <Link href="/fetch-two">Fetch Two  - <span className="text-sm text-zinc-600">fetching data from two APIs</span></Link>
         </li>
         <li>
-          <Link href="/image-gallery">Image Gallery - <span className="text-sm text-zinc-600">Go to previous and next images using below "previous" and "next" buttons</span></Link>
+          <Link href="/image-gallery">Image Gallery - <span className="text-sm text-zinc-600">Go to previous and next images using below &quot;previous&quot; and &quot;next&quot; buttons</span></Link>
         </li>
         <li>
-          <Link href="/drag">Drag Me - <span className="text-sm text-zinc-600">made the "Drag Me" text dragable</span></Link>
+          <Link href="/drag">Drag Me - <span className="text-sm text-zinc-600">made the &quot;Drag Me&quot; text dragable</span></Link>
         </li>
         <li>
           <Link href="/multiple-state">Multiple State Handling</Link>
@@ -71,7 +71,7 @@ const Home = () => {
           <Link href="/usereducer-pagination"> Pagination using useReducer hook</Link>
         </li>
         <li>
-          <Link href="/translator"> Translator - <span className="text-sm text-zinc-600">Translate the text using "english" and "espanish" buttons</span></Link>
+          <Link href="/translator"> Translator - <span className="text-sm text-zinc-600">Translate the text using &quot;english&quot; and &quot;espanish&quot; buttons</span></Link>
         </li>
         <li>
           <Link href="/timer"> Timer - <span className="text-sm text-zinc-600">start,stop and reset the timer using the corresponding buttons</span></Link>

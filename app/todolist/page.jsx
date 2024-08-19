@@ -21,7 +21,7 @@ export const Todolist = () => {
      let result =maintask.map((item,index) => {
           
       return(
-       <div>
+       <div key={index}>
 
           <li className="mb-5" key={index}>{item}
           <button onClick={()=>{DeleteHandler(index)}} className="p-2 bg-zinc-500">delete</button>

@@ -33,8 +33,8 @@ const LocalProvider=({children})=>{
     )
 };
 
-const uselocal=()=>{
+const Uselocal=()=>{
     return useContext(LocalContext)
 }
 
-export{uselocal,LocalProvider};
+export{Uselocal,LocalProvider};

@@ -1,5 +1,5 @@
 import React from 'react';
-import { uselocal, LocalProvider} from './LocalizationContext';
+import { Uselocal, LocalProvider} from './LocalizationContext';
 
 
 
@@ -7,8 +7,8 @@ import { uselocal, LocalProvider} from './LocalizationContext';
 
 const Translator=()=>{
 
-    console.log("jdnmvn", uselocal());
-    const{local,setLocal,translation}=uselocal();
+    console.log("jdnmvn", Uselocal());
+    const{local,setLocal,translation}=Uselocal();
 
 
     const Translate = (newlocal) => {

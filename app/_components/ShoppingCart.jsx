@@ -49,8 +49,8 @@ const ShoppingCart = () => {
 
     <ul className="ml-5 mt-4">
       {cartState.cartItems.map((item,id)=>(    
-        <div className="flex flex-row gap-5 mb-5">
-          <li key={id}>
+        <div key={id} className="flex flex-row gap-5 mb-5">
+          <li>
             {item.name}-{item.quantity}
           </li>
           <div className="flex gap-2">
