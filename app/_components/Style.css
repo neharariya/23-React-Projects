@@ -1,0 +1,25 @@
+.menu-bar {
+    display: block; /* Show menu by default for larger screens */
+}
+
+.menu-bar.open {
+    display: block; /* Show menu when open */
+}
+
+
+
+/* Media query for smaller screens */
+@media (max-width: 800px) {
+    .menu-icon {
+        display: block; /* Show the menu icon when screen width is 800px or less */
+    }
+
+    .menu-bar {
+        display: none; /* Hide the menu items by default on smaller screens */
+    }
+
+    .menu-bar.open {
+        display: block; /* Show the menu items when the menu is open */
+    }
+}
+
