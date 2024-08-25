@@ -4,12 +4,71 @@ import Link from 'next/link';
 import React from 'react';
 
 const Home = () => {
+  
+  const list = [
+    {title: 'TodoList', desc: 'using usestate hook- can add and remove task', link: '/todolist'},
+    {title: 'Authentication', desc: 'login/logout button', link: '/authentication'},
+    {title: 'Fetch Two', desc: 'fetching data from two APIs', link: '/fetch-two'},
+    {title: 'Image Gallery', desc: 'Go to previous and next images using below &quot;previous&quot; and &quot;next&quot; buttons', link: '/todolist'},
+    {title: 'Drag Me', desc: 'using usestate hook- can add and remove task', link: '/todolist'},
+    {title: 'Color Picker', desc: 'using usestate hook- can add and remove task', link: '/todolist'},
+    {title: 'Drag Me', desc: 'using usestate hook- can add and remove task', link: '/todolist'},
+    {title: 'Counter', desc: 'using usestate hook- can add and remove task', link: '/todolist'},
+    {title: 'File Uploader', desc: 'using usestate hook- can add and remove task', link: '/todolist'},
+    {title: 'Pagination', desc: 'using usestate hook- can add and remove task', link: '/todolist'},
+    {title: 'Search Item', desc: 'using usestate hook- can add and remove task', link: '/todolist'},
+    {title: 'Change Color', desc: 'using usestate hook- can add and remove task', link: '/todolist'},
+    {title: 'Search Item', desc: 'using usestate hook- can add and remove task', link: '/todolist'},
+    {title: 'Quotes', desc: 'using usestate hook- can add and remove task', link: '/todolist'},
+    {title: 'Registration Form', desc: 'using usestate hook- can add and remove task', link: '/todolist'},
+    {title: 'Responsive', desc: 'using usestate hook- can add and remove task', link: '/todolist'},
+    {title: 'Theme', desc: 'using usestate hook- can add and remove task', link: '/todolist'},
+    {title: 'Shopping Cart', desc: 'using usestate hook- can add and remove task', link: '/todolist'},
+    {title: 'Translator', desc: 'using usestate hook- can add and remove task', link: '/todolist'},
+    {title: 'Timer', desc: 'using usestate hook- can add and remove task', link: '/todolist'},
+    {title: 'ProgressBar', desc: 'using usestate hook- can add and remove task', link: '/todolist'},
+  ]
+
+
+
+
+/todolist
+
+
+/image-gallery
+/drag
+/multiple-state
+/color-picker
+/counter
+/file-uploader
+/pagination
+/search-item
+/change-color
+/quotes
+/registration-form
+/weather-app
+/responsive
+/theme
+/shopping-cart
+/useReducer-todolist
+/usereducer-pagination
+/translator
+/timer
+/progress-bar
+
+
   return (
     <div className="ml-10 mt-5">
 
       <h1 className="mb-6">React Projects</h1>
 
       <ol type ="a" className="leading-9 list-decimal text-black dark:text-white">
+        {list.map((item, index) => (
+          <li>
+            <Link href={item.link}><span className='underline text-black dark:text-white'>🔗👉 {item.title}</span> -  <span className="text-sm text-zinc-600">{item.desc}</span></Link>
+          </li>
+        ))}
+
         <li>
           <Link href="/todolist">TodoList -  <span className="text-sm text-zinc-600">using usestate hook- can add and remove task</span></Link>
         </li>
