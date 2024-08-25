@@ -66,7 +66,7 @@ const Home = () => {
 
       <ol type ="a" className="leading-9 list-decimal text-black dark:text-white">
         {list.map((item, index) => (
-          <li>
+          <li key={index}>
             <Link href={item.link}><span className='underline text-black dark:text-white'>🔗👉 {item.title}</span> -  <span className="text-sm text-zinc-500">{item.desc}</span></Link>
           </li>
         ))}
